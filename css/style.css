@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Kaushan+Script&family=Niconne&family=Open+Sans&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Source+Serif+4&family=WindSong:wght@500&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+*:hover{
+  /* outline: 1px solid red; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #DAA520;
+  background: #04090a;
+  font-family: 'Cinzel', serif;
+}
+li{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  margin: 0;
+  padding: 0;
+  background: url('/images/header.jpg') center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+  border-radius: 0 0 100px 0;
+  height: 100%;
+  
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.logo{
+  margin: 0 auto 0 0;
+  font-family: 'WindSong', cursive;
+}
+
+.navlist{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navlist li > a{
+  font-size: 11px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.nav-search{
+  width: 15px;
+  margin: 0 0 0 10px;
+}
+
+.nav-search img{
+  transform: translate(0, 30%);
+}
+
+header h3{
+  margin: 0;
+  color: white;
+  font-size: 50px;
+}
+
+.header-title{
+  position: relative;
+  width: 60%;
+  padding: 10% 5% 50% 10%;
+}
+
+.header-title p{
+  font-size: 10px;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.title-btn{
+  padding: 3%;
+  text-align: center;
+  margin-top: 30px;
+  background: black;
+  width: 60%;
+  font-size: 16px;
+  /* border: 2px solid white; */
+}
+
+.title-btn h4{
+  margin: 0;
+  font-size: 12px;
+}
+
+main{
+  position: relative;
+  padding: 0 10%;
+}
+
+.discount{
+  position: absolute;
+  width: 30%;
+  background: rgb(10, 10, 10);
+  left: 10%;
+  top: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 12px;
+  color: white;
+  box-shadow: 5px white;
+}
+
+.discount h3{
+  font-size: 10px;
+}
+
+.discount p{
+  text-align: center;
+}
+
+.discount p > span{
+  font-size: 18px;
+}
+
+.discount-btn{
+  margin-top: 10%;
+  background: white;
+  color: black;
+  padding: 10px;
+}
+
+.icon{
+  width: 60px;
+  /* background: white center;
+  clip-path: circle(50% at 50%); */
+}
+
+.services{
+  padding: 10%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1 h3{
+  font-size: 12px;
+}
+
+.card1 p{
+  font-size: 10px;
+  text-align: center;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+}
+
+.about-image{
+  width: 50%;
+  display: block;
+}
+
+.about-image img{
+  width: 100%;
+}
+
+.about-title{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.about-title h3{
+  font-size: 30px;
+}
+
+.about-title p{
+  font-size: 12px;
+}
+
+.about-btn{
+  background: #DAA520;
+  width: 30%;
+  padding: 5px;
+}
+
+.about-btn a h3{
+  color: #04090a;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.stylist-img img{
+ width: 178px;
+  
+}
+.stylist1{
+  width: 30%;
+}
+.stylist3{
+  
+}
+
+.style h3{
+  text-align: center;
+  
+}
+
+.style{
+  margin-top: 10%;
+}
+
+.stylist-info :is(h3, p){
+  margin: 0;
+}
+
+.stylist-info p{
+  font-size: 12px;
+}
+.stylist-info h3{
+  font-size: 12px;
+}
+.stylists{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  
+  /* height: 600px; */
+  padding: 0;
+}
+
+.offer{
+  background: url(/images/offer.jpg) no-repeat right;
+  padding: 0;
+  margin-top: 10%;
+}
+
+.offer-title{
+  background: #0c101c;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 40%;
+  font-size: 12px;
+  padding: 5% 5% 15%;
+}
+
+.offer-title p > span{
+  font-size: 20px;
+}
+
+.offer-btn{
+  background: #04090a;
+  width: 60%;padding: 8px;
+  margin-top: 10%;
+}
+
+.lookbook{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lookbook h3{
+  text-align: center;
+}
+
+.pics{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.pic1 img{
+  width: 150px;
+}
+footer {
+  margin-top: 10%;
+  padding: 10PX;
+  background: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
